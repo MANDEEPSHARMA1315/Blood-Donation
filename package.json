@@ -1,0 +1,26 @@
+{
+  "name": "blood-donation-camp-coordination-system",
+  "version": "1.0.0",
+  "description": "Blood Donation Camp Coordination System - Full Stack Application",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"red,cyan\" \"npm run server\" \"npm run client\"",
+    "start": "concurrently -n \"SERVER,CLIENT\" -c \"red,cyan\" \"npm run server\" \"npm run client\"",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "seed": "npm --prefix server run seed",
+    "test": "npm --prefix server run test",
+    "install:all": "npm --prefix server install && npm --prefix client install"
+  },
+  "keywords": [
+    "blood-donation",
+    "camp-coordination",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "Antigravity Senior Full-Stack Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
